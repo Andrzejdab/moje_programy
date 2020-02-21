@@ -2,10 +2,9 @@ import math
 
 
 class Circle:
-    """Class to create Circle objects"""
+
 
     def __init__(self, radius=1):
-        """Circle initializer"""
         self.radius = radius
 
     @property
@@ -20,17 +19,14 @@ class Circle:
 
     @property
     def area(self):
-        """Calculate and return the area of the Circle"""
         return math.pi * self.radius ** 2
 
     @property
     def diameter(self):
-        """Calculate and return the diameter of the Circle"""
         return self.radius * 2
 
     @diameter.setter
     def diameter(self, diameter):
-        """Set the diameter"""
         self.radius = diameter / 2
 
     def __str__(self):
